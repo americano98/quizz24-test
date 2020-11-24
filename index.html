@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>                                                                                         <!-- BNA -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous"></script> 
+  <script src="./js/scripts.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__leftside">
+        <img src="./images/logo.png" alt="Логотип" class="header__logo">
+        <div class="header__title">Изготавливаем и устанавливаем<br>кухни в Москве и области с 2004 года</div>
+      </div>
+      <div class="header__rightside">
+        <div class="header__phone"><a href="tel:+7 (995) 508-51-17" class="phone__link">+7 (995) 508-51-17</a></div>
+        <div class="header__online">
+          <img src="./images/online-circle.svg" alt="" class="online__circle">
+          <span class="online__text">сейчас работаем</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <section id="section1">
+      <div class="container">
+        <div class="section1__content">
+          <h1 class="section1__title">
+            Современные Комфортные Кухни
+            <span class="section1__subtitle">с пожизненной гарантией</span>
+          </h1>
+          
+          <div class="section1__leftside">
+            <div class="section1__trends">
+              <div class="trends__title">Тренды дизайна кухни 2020 г.</div>
+              <div class="trends__row">
+                <div class="trends__leftside">
+                  <div class="trends__img-block">
+                    <img src="./images/trends__img.jpg" alt="" class="trends__img">
+                  </div>
+                </div>
+                <div class="trends__rightside">
+                  <div class="trends__list_title">Максимальное использование<br>пространства и простота в уходе</div>
+                  <ul class="trends__list">
+                    <li class="trends__list__item">Гладкие, ровные поверхности без ручек</li>
+                    <li class="trends__list__item">«Умные»‎ материалы фасадов —<br>нет отпечатков и царапин </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="section1__sale">
+              <div class="sale__title"><span class="sale__title-bold">Акция!</span> В честь 16-летия фабрики<br>Скидки до 30% до 5 октября</div>
+              <div class="sale__text">Рассчитайте стоимость вашей кухни &nbsp;в 3-х комплектациях:<br>
+                «Эксклюзивная»‎, «Богатая»‎ и «Хорошая»‎ —<br>и зафиксируйте <span class="sale__text-bold">цену по акции</span></div>
+              <div class="sale__button_block">
+                <a href="#quiz" class="button sale__button">
+                  <span class="sale__button__title">Рассчитайте стоимость</span><span class="sale__button__subtitle">за 2 минуты</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="quiz" id="quiz">
+      <div class="container">
+        <div class="test test__step-1 test-current" id="step-1">
+          <div class="test__text_calculation">Рассчитайте стоимость вашей кухни в 3-х комплектациях:<br><span class="test__text_calculation-subtext">«Эксклюзивная»‎, «Богатая»‎ и «Хорошая»‎</span></div>
+          
+          <div class="test__progress progress">
+            <div class="progress__line">
+              <div class="progress__title">1 &nbsp;из 6</div>
+            </div>
+          </div>
+
+          <h3 class="test__step__title">Мы уже приступили к расчёту стоимости кухни!</h3>
+
+          <div class="test__content">
+            <div class="test__row">
+              <div class="test__leftside">
+                <div class="test__question">
+                  <form action="">
+                    <div class="question">
+                      <div class="question__title">Как вам удобнее получить результат?</div>
+                      <ul class="answer__list">
+                        <li class="answer__item"><input type="radio" class="answer__radio" data-content="BNA" name="radio" id="radio-1"><label for="radio-1" class="answer__title">Пришлите расчет в <span class="answer__title-strong">WhatsApp</span></label></li>
+                        <li class="answer__item"><input type="radio" class="answer__radio" data-content="BNA" name="radio" id="radio-2"><label for="radio-2" class="answer__title">Пришлите расчет ссылкой в <span class="answer__title-strong">SMS</span></label></li>
+                        <li class="answer__item"><input type="radio" class="answer__radio" data-content="BNA" name="radio" checked id="radio-3"><label for="radio-3" class="answer__title">Перезвоните, у меня остались вопросы</label></li>
+                      </ul>
+                    </div>
+                    <div class="test__phone-title">Введите номер телефона и получите<br>расчет кухни в 3-х комплектациях</div>
+                  </div>
+
+                  <div class="test__buttons">
+                    <input type="tel" class="test__phone-input" required placeholder="_(___)___-__-__" />
+                    <div class="test__button-block">
+                      <button class="button test__button"><span class="test__button_title">Получить результат</span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="test__rightside">
+                <div class="gift">
+                  <div class="gift__title">Ваш подарок</div>
+                  <div class="gift__img-block"><img src="./images/sink.jpg" alt="" class="gift__img"></div>
+                  <div class="gift__info gift-info">
+                    <div class="gift-info__title">Кухонная мойка</div>
+                    <div class="gift-info__surprise"><span class="gift-info__surprise_bold">+ СЮРПРИЗ!</span> Петли <br>с доводчиками на всю кухню</div>
+                    <div class="gift-info__text">подарок будет забронирован за&nbsp;вашим номером</div>
+                  </div>
+                  <div class="gift__after">Этот подарок вы получите, если закажете кухню у нас</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="test__after">
+              <div class="circle-container">
+                <div class="circle">
+                  <div class="circle__text">0%</div>
+                  <svg class="circle__svg">
+                    <circle class="circle__layer-1" cx="60" cy="60" r="53"></circle>
+                    <circle class="circle__layer-2" cx="60" cy="60" r="53"></circle>
+                    <path class="circle__ready" d="M25.8048 0.62384C24.8587 0.62384 23.9694 1.00916 23.3002 1.7088L10.194 15.4296L6.70085 11.7789C6.03208 11.0797 5.14285 10.6946 4.19701 10.6946C3.251 10.6946 2.36178 11.0797 1.69285 11.7787C1.02407 12.4777 0.655884 13.4072 0.655884 14.3958C0.655884 15.3843 1.02407 16.3138 1.69285 17.0126L7.69063 23.2815C8.35941 23.9806 9.24863 24.3658 10.1946 24.3658C11.1402 24.3658 12.0297 23.9805 12.6993 23.2808L28.3088 6.94234C29.6892 5.49906 29.6891 3.15095 28.3088 1.70767C27.64 1.00883 26.7507 0.62384 25.8048 0.62384Z" fill="#FFC804"/> <!-- BNA -->
+                  </svg>
+                </div>
+              </div>
+              <div class="test__text-after">Стоимость кухни в 3-х комплектациях сформирована.<span class="test__text-after__bold">&nbsp;Она откроется сразу после регистрации</span></div>
+            </div>
+
+          <div class="footer test__footer">
+            <div class="footer__container">
+              <div class="footer__row">
+                <div class="footer__col"><a href="#" target="_blank" class="footer__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></div>
+                <div class="footer__col"><a href="//quiz24.ru/" target="_blank" class="footer__link">Разработано в Quiz24.ru</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="test test__step-2 test-pre_active" id="step-2">
+          <div class="test-pre_active__title"><span class="test-pre_active__title-text" data-content="BNA">Стоимость кухни в 3-х комплектациях</span></div>
+          
+
+          <div class="footer test__footer">
+            <div class="footer__container">
+              <div class="footer__row">
+                <div class="footer__col"><a href="#" target="_blank" class="footer__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></div>
+                <div class="footer__col"><a href="//quiz24.ru/" target="_blank" class="footer__link">Разработано в Quiz24.ru</a></div>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                        <!-- B N A -->
